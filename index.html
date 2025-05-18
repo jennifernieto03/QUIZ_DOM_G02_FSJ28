@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+
+      <!--Lado Izquierdo: Preguntas-->
+      <section class="preguntas-contenido">
+        <div id="contador-preguntas" class="estilo-numpregunta">
+          <h3>Pregunta <span id="numero-pregunta"></span> de 10</h3>
+        </div>
+
+        <div id="contenedor-preguntas" class="estilo-pregunta">
+          <h1 id="preguntas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
+            quis voluptas. Doloremque sint consequuntur quas tempore eos iure quibusdam blanditiis fugiat modi asperiores. 
+            Explicabo, facilis sit?
+          </h1>
+        </div>
+
+      </section>
+      <!--Termina Lado Izquiero: Preguntas-->
+      
+      <!--Lado Derecho: Opciones-->
+      <section class="opciones-contenido">
+
+        <div id="contenedor-opciones" class="estilos-opciones">
+
+          <span>
+            <input type="radio" id="opcion-one" name="opcion" class="radio" value="optionA" />
+            <div><h4 class="literales">A</h4></div>
+            <label for="opcion-one" class="opcion" id="opcion-una-label">Pregunta 1</label>
+          </span>
+
+          <span>
+            <input type="radio" id="opcion-dos" name="opcion" class="radio" value="optionB" />
+            <label for="opcion-dos" class="opcion" id="opcion-dos-label">Pregunta 2</label>
+          </span>
+
+          <span>
+            <input type="radio" id="opcion-tres" name="opcion" class="radio" value="optionC" />
+            <label for="opcion-tres" class="opcion" id="opcion-tres-label">Pregunta 3</label>
+          </span>
+
+          <span>
+            <input type="radio" id="opcion-cuatro" name="opcion" class="radio" value="optionD" />
+            <label for="opcion-cuatro" class="opcion" id="opcion-cuatro-label">Pregunta 4</label>
+          </span>
+
+        </div>
+
+        <div class="boton-continuar">
+            <button onclick="handleNextQuestion()">Continuar</button>
+        </div>
+        
+
+
+      </section>
+
+    </main>
+
+    <!--<div id="app"></div>
+    <script type="module" src="/src/main.js"></script>-->
+  </body>
+</html>
