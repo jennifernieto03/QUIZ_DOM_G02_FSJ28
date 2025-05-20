@@ -8,10 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz</title>
+    <title>Quizz Interactivo</title>
   </head>
+  
   <body>
-    <main class="contenedor-principal">
+    <header class="header">
+      <div class="tema">
+        <p id="textoTema">­</p>
+      </div>
+      <div>
+        <button>Tema</button>
+      </div>
+    </header>
+
+    <section id="pantallaPrincipal" class="pantalla-principal">
+      <div class="bienvenida">
+        <h1>Welcome to the <br><span>Frontend quizz</span></h1>
+        <p>Pick a subject to get started</p>
+      </div>
+
+      <div class="botones-principales">
+        <button class="boton-quizz" onclick="startQuiz('html')">HTML</button>
+        <button class="boton-quizz" onclick="startQuiz('css')">CSS</button>
+        <button class="boton-quizz" onclick="startQuiz('git')">GIT</button>
+        <button class="boton-quizz" onclick="startQuiz('javascript')">JAVASCRIPT</button>
+      </div>
+    
+    </section>
+
+    <main id="contenedorPreguntas" class="contenedor-principal ">
       <section class="preguntas-contenido">
         <div id="contador-preguntas" class="estilo-numpregunta">
           <span>Pregunta <span id="numero-pregunta">1</span> de 10</span>
@@ -36,35 +61,34 @@
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">A</h4></div>
+            <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
             <label for="opcion-one" class="opcion" id="opcion-una-label">Respuesta 1</label>
           </div>
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">B</h4></div>
+            <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
             <label for="opcion-dos" class="opcion" id="opcion-dos-label">Respuesta 2</label>
           </div>
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">C</h4></div>
+            <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
             <label for="opcion-tres" class="opcion" id="opcion-tres-label">Respuesta 3</label>
           </div>
           
           <div class="contenedor-respuesta">
             <div><h4 class="literales">D</h4></div>
+            <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
             <label for="opcion-cuatro" class="opcion" id="opcion-cuatro-label">Respuesta 4</label>
           </div>
           <div class="boton-continuar">
             <button onclick="handleNextQuestion()">Continuar</button> 
           </div>
 
-          
-
         </div>
       </section>
-
     </main>
-
-    <!--<div id="app"></div>
-    <script type="module" src="/src/main.js"></script>-->
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
