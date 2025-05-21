@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz Interactivo</title>
+    <title>Quiz Frontend Interactivo</title>
   </head>
   
   <body>
@@ -23,27 +23,27 @@
 
     <section id="pantallaPrincipal" class="pantalla-principal">
       <div class="bienvenida">
-        <h1>Welcome to the <br><span>Frontend quizz</span></h1>
-        <p>Pick a subject to get started</p>
+        <h1>Bienvenido al <br><span>Quiz de Frontend</span></h1>
+        <p>Elige un tema para comenzar</p>
       </div>
 
       <div class="botones-principales">
-        <button class="boton-quizz" onclick="startQuiz('html')">HTML</button>
-        <button class="boton-quizz" onclick="startQuiz('css')">CSS</button>
-        <button class="boton-quizz" onclick="startQuiz('git')">GIT</button>
-        <button class="boton-quizz" onclick="startQuiz('javascript')">JAVASCRIPT</button>
+        <button class="boton-quiz" onclick="empezarQuiz('html')">HTML</button>
+        <button class="boton-quiz" onclick="empezarQuiz('css')">CSS</button>
+        <button class="boton-quiz" onclick="empezarQuiz('git')">GIT</button>
+        <button class="boton-quiz" onclick="empezarQuiz('javascript')">JAVASCRIPT</button>
       </div>
     
     </section>
 
     <main id="contenedorPreguntas" class="contenedor-principal ">
       <section class="preguntas-contenido">
-        <div id="contador-preguntas" class="estilo-numpregunta">
-          <span>Pregunta <span id="numero-pregunta">1</span> de 10</span>
+        <div id="contadorPregunta" class="estilo-numpregunta">
+          <span>Pregunta <span id="numeroPregunta">1</span> de 10</span>
         </div>
 
-        <div id="contenedor-preguntas" class="estilo-pregunta">
-          <h1 id="preguntas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
+        <div id="contenedorPregunta" class="estilo-pregunta">
+          <h1 id="pregunta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
             quis voluptas. Doloremque sint consequuntur quas tempore eos iure quibusdam blanditiis fugiat modi asperiores. 
             Explicabo, facilis sit?
           </h1>
@@ -55,39 +55,40 @@
 
       </section>
       <!--Termina Lado Izquiero: Preguntas-->
-      <!--Lado Derecho: Opciones-->
+
+      <!-- Inicia Lado Derecho: Opciones-->
       <section class="opciones-contenido">
-        <div id="contenedor-opciones" class="estilos-opciones">
+        <div id="contenedorOpciones" class="estilos-opciones">
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">A</h4></div>
-            <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-            <label for="opcion-one" class="opcion" id="opcion-una-label">Respuesta 1</label>
+            <input type="radio" id="opcion-uno" name="opcion" class="radio" value="opcion-A"/>
+            <label for="opcion-uno" class="opcion" id="opcionUnoLabel">Respuesta 1</label>
           </div>
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">B</h4></div>
-            <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
-            <label for="opcion-dos" class="opcion" id="opcion-dos-label">Respuesta 2</label>
+            <input type="radio" id="opcion-dos" name="opcion" class="radio" value="opcion-B"/>
+            <label for="opcion-dos" class="opcion" id="opcionDosLabel">Respuesta 2</label>
           </div>
 
           <div class="contenedor-respuesta">
             <div><h4 class="literales">C</h4></div>
-            <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
-            <label for="opcion-tres" class="opcion" id="opcion-tres-label">Respuesta 3</label>
+            <input type="radio" id="opcion-tres" name="opcion" class="radio" value="opcion-C"/>
+            <label for="opcion-tres" class="opcion" id="opcionTresLabel">Respuesta 3</label>
           </div>
           
           <div class="contenedor-respuesta">
             <div><h4 class="literales">D</h4></div>
-            <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
-            <label for="opcion-cuatro" class="opcion" id="opcion-cuatro-label">Respuesta 4</label>
+            <input type="radio" id="opcion-cuatro" name="opcion" class="radio" value="opcion-D"/>
+            <label for="opcion-cuatro" class="opcion" id="opcionCuatroLabel">Respuesta 4</label>
           </div>
           <div class="boton-continuar">
-            <button onclick="handleNextQuestion()">Continuar</button> 
+            <button onclick="siguientePregunta()">Continuar</button> 
           </div>
-
         </div>
       </section>
+       <!-- Termina Lado Derecho: Opciones-->
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>

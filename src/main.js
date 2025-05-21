@@ -1,4 +1,4 @@
-function startQuiz(tema) {
+function empezarQuiz(tema) {
   document.getElementById('pantallaPrincipal').style.display = 'none';
 
   const quizSection = document.getElementById('contenedorPreguntas');
@@ -10,4 +10,4 @@ function startQuiz(tema) {
   console.log("Tema seleccionado:", tema);
 }
 
-window.startQuiz = startQuiz;
+window.empezarQuiz = empezarQuiz;
