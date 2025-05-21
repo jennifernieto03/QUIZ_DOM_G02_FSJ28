@@ -1,0 +1,331 @@
+{
+  "html": [
+    {
+        "pregunta": "¿Qué significa HTML?",
+        "opcionA": "Hyper Trainer Marking Language",
+        "opcionB": "Hyper Text Markup Language",
+        "opcionC": "Hyper Text Marketing Language",
+        "opcionD": "Hyper Text Markup Leveler",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cuál etiqueta se usa para insertar un enlace?",
+        "opcionA": "<link>",
+        "opcionB": "<a>",
+        "opcionC": "<href>",
+        "opcionD": "<url>",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cuál etiqueta define un párrafo en HTML?",
+        "opcionA": "<para>",
+        "opcionB": "<p>",
+        "opcionC": "<paragraph>",
+        "opcionD": "<text>",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cuál es el atributo para agregar una imagen?",
+        "opcionA": "src",
+        "opcionB": "href",
+        "opcionC": "alt",
+        "opcionD": "link",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se inserta un comentario en HTML?",
+        "opcionA": "// comentario",
+        "opcionB": "<!-- comentario -->",
+        "opcionC": "/* comentario */",
+        "opcionD": "# comentario",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué etiqueta se usa para títulos principales?",
+        "opcionA": "<h1>",
+        "opcionB": "<title>",
+        "opcionC": "<head>",
+        "opcionD": "<header>",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cuál es el elemento raíz en un documento HTML?",
+        "opcionA": "<head>",
+        "opcionB": "<body>",
+        "opcionC": "<html>",
+        "opcionD": "<root>",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Para qué sirve el atributo alt en imágenes?",
+        "opcionA": "Definir el tamaño",
+        "opcionB": "Texto alternativo para accesibilidad",
+        "opcionC": "Enlace a otra página",
+        "opcionD": "Estilo de la imagen",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cuál etiqueta se usa para listas ordenadas?",
+        "opcionA": "<ul>",
+        "opcionB": "<li>",
+        "opcionC": "<ol>",
+        "opcionD": "<list>",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Qué significa DOCTYPE en HTML?",
+        "opcionA": "Documento tipo",
+        "opcionB": "Declarar versión del navegador",
+        "opcionC": "Declarar tipo de documento HTML",
+        "opcionD": "Ninguna de las anteriores",
+        "respuesta": "opcionC"
+    }
+  ],
+  "css": [
+    {
+        "pregunta": "¿Qué significa CSS?",
+        "opcionA": "Cascading Style Sheets",
+        "opcionB": "Computer Style Sheets",
+        "opcionC": "Creative Style Sheets",
+        "opcionD": "Colorful Style Sheets",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se selecciona un elemento por id en CSS?",
+        "opcionA": ".id",
+        "opcionB": "#id",
+        "opcionC": "*id",
+        "opcionD": "id",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué propiedad cambia el color de fondo?",
+        "opcionA": "background-color",
+        "opcionB": "color-background",
+        "opcionC": "bgcolor",
+        "opcionD": "background",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se escribe un comentario en CSS?",
+        "opcionA": "// comentario",
+        "opcionB": "<!-- comentario -->",
+        "opcionC": "/* comentario */",
+        "opcionD": "# comentario",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Cuál propiedad controla el tamaño de la fuente?",
+        "opcionA": "font-style",
+        "opcionB": "font-weight",
+        "opcionC": "font-size",
+        "opcionD": "text-size",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Qué valor de display hace que un elemento sea invisible pero ocupe espacio?",
+        "opcionA": "none",
+        "opcionB": "hidden",
+        "opcionC": "invisible",
+        "opcionD": "visibility: hidden",
+        "respuesta": "opcionD"
+    },
+    {
+        "pregunta": "¿Cómo se aplica un margen en CSS?",
+        "opcionA": "padding",
+        "opcionB": "margin",
+        "opcionC": "border",
+        "opcionD": "space",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué propiedad cambia el tipo de letra?",
+        "opcionA": "font-family",
+        "opcionB": "font-type",
+        "opcionC": "text-family",
+        "opcionD": "font-style",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cuál es el selector universal en CSS?",
+        "opcionA": "*",
+        "opcionB": "#",
+        "opcionC": ".",
+        "opcionD": "%",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué propiedad controla el espacio interno?",
+        "opcionA": "margin",
+        "opcionB": "padding",
+        "opcionC": "border",
+        "opcionD": "spacing",
+        "respuesta": "opcionB"
+    }
+  ],
+  "javascript": [
+    {
+        "pregunta": "¿Cómo se declara una variable en JavaScript?",
+        "opcionA": "var nombre",
+        "opcionB": "variable nombre",
+        "opcionC": "v nombre",
+        "opcionD": "let nombre",
+        "respuesta": "opcionD"
+    },
+    {
+        "pregunta": "¿Cuál es el operador para comparar igualdad estricta?",
+        "opcionA": "==",
+        "opcionB": "=",
+        "opcionC": "===",
+        "opcionD": "!=",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Cómo se crea una función en JavaScript?",
+        "opcionA": "function miFuncion() {}",
+        "opcionB": "func miFuncion() {}",
+        "opcionC": "fun miFuncion() {}",
+        "opcionD": "def miFuncion() {}",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué método se usa para mostrar en consola?",
+        "opcionA": "console.print()",
+        "opcionB": "console.log()",
+        "opcionC": "print()",
+        "opcionD": "console.show()",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué palabra clave detiene un bucle?",
+        "opcionA": "stop",
+        "opcionB": "exit",
+        "opcionC": "break",
+        "opcionD": "halt",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Cómo se agrega un comentario de una línea?",
+        "opcionA": "// comentario",
+        "opcionB": "<!-- comentario -->",
+        "opcionC": "/* comentario */",
+        "opcionD": "# comentario",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué método convierte JSON a objeto?",
+        "opcionA": "JSON.stringify()",
+        "opcionB": "JSON.parse()",
+        "opcionC": "JSON.toObject()",
+        "opcionD": "JSON.convert()",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cómo se añade un elemento al final de un array?",
+        "opcionA": "push()",
+        "opcionB": "pop()",
+        "opcionC": "shift()",
+        "opcionD": "unshift()",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué palabra clave declara una constante?",
+        "opcionA": "const",
+        "opcionB": "let",
+        "opcionC": "var",
+        "opcionD": "constant",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se llama la función para obtener un elemento por id?",
+        "opcionA": "document.getElementByClass()",
+        "opcionB": "document.getElementByTag()",
+        "opcionC": "document.getElementById()",
+        "opcionD": "document.querySelectorAll()",
+        "respuesta": "opcionC"
+    }
+  ],
+  "git": [
+    {
+        "pregunta": "¿Qué comando crea un nuevo repositorio Git?",
+        "opcionA": "git init",
+        "opcionB": "git create",
+        "opcionC": "git new",
+        "opcionD": "git start",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué comando se usa para ver el historial de commits?",
+        "opcionA": "git history",
+        "opcionB": "git log",
+        "opcionC": "git status",
+        "opcionD": "git commits",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cómo se agrega un archivo para el commit?",
+        "opcionA": "git commit add",
+        "opcionB": "git add",
+        "opcionC": "git push",
+        "opcionD": "git stage",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué comando sube los cambios al repositorio remoto?",
+        "opcionA": "git upload",
+        "opcionB": "git push",
+        "opcionC": "git send",
+        "opcionD": "git pull",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Cómo se clona un repositorio remoto?",
+        "opcionA": "git copy",
+        "opcionB": "git clone",
+        "opcionC": "git fork",
+        "opcionD": "git pull",
+        "respuesta": "opcionB"
+    },
+    {
+        "pregunta": "¿Qué comando muestra el estado actual de archivos?",
+        "opcionA": "git status",
+        "opcionB": "git info",
+        "opcionC": "git check",
+        "opcionD": "git log",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se crea una nueva rama?",
+        "opcionA": "git branch nombre",
+        "opcionB": "git create branch nombre",
+        "opcionC": "git new branch nombre",
+        "opcionD": "git checkout nombre",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Qué comando cambia de rama?",
+        "opcionA": "git change nombre",
+        "opcionB": "git switch nombre",
+        "opcionC": "git checkout nombre",
+        "opcionD": "git move nombre",
+        "respuesta": "opcionC"
+    },
+    {
+        "pregunta": "¿Qué comando fusiona ramas?",
+        "opcionA": "git merge",
+        "opcionB": "git join",
+        "opcionC": "git combine",
+        "opcionD": "git unite",
+        "respuesta": "opcionA"
+    },
+    {
+        "pregunta": "¿Cómo se revierte un commit?",
+        "opcionA": "git reset",
+        "opcionB": "git revert",
+        "opcionC": "git undo",
+        "opcionD": "git rollback",
+        "respuesta": "opcionB"
+    }
+    ]
+    }
+            
