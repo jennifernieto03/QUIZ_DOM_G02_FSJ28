@@ -12,84 +12,101 @@
   </head>
   
   <body>
+    <!-- Iniciar header -->
     <header class="header">
-      <div class="tema">
-        <p id="textoTema">­</p>
+      <div class="header__tema-actual">
+        <div class="header__icono-boton">
+          <img class="header__icono" src="/src/images/icon-accessibility.svg" alt="Icono del tema">
+        </div>
+        <h2 class="header__titulo">Algún tema</h2>
       </div>
-      <div>
-        <button>Tema</button>
+
+      <div class="header__modo-oscuro">
+        <div class="header__icono-luna">
+          <img src="/src/images/icon-moon-light.svg" alt="Icono luna">
+        </div>
+
+        <label class="header__interruptor" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="header__deslizador header__deslizador--redondo"></div>
+        </label>
+        <div class="header__icono-sol">
+          <img src="/src/images/icon-sun-light.svg" alt="Icono sol">
+        </div>
       </div>
     </header>
+    <!-- Iniciar termina -->
 
-    <section id="pantallaPrincipal" class="pantalla-principal">
-      <div class="bienvenida">
+    <!-- Iniciar pantalla inicial -->
+    <section id="pantallaPrincipal" class="pantalla">
+      <div class="pantalla__bienvenida"">
         <h1>Bienvenido al <br><span>Quiz de Frontend</span></h1>
         <p>Elige un tema para comenzar</p>
       </div>
 
-      <div class="botones-principales">
-        <button class="boton-quiz" onclick="empezarQuiz('html')">HTML</button>
-        <button class="boton-quiz" onclick="empezarQuiz('css')">CSS</button>
-        <button class="boton-quiz" onclick="empezarQuiz('git')">GIT</button>
-        <button class="boton-quiz" onclick="empezarQuiz('javascript')">JAVASCRIPT</button>
+      <div class="selector-tema">
+        <button class="selector-tema__btn" onclick="empezarQuiz('html')">HTML</button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('css')">CSS</button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('git')">GIT</button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('javascript')">JAVASCRIPT</button>
       </div>
-    
     </section>
+    <!-- Termina pantalla inicial -->
 
-    <main id="contenedorPreguntas" class="contenedor-principal ">
-      <section class="preguntas-contenido">
-        <div id="contadorPregunta" class="estilo-numpregunta">
+    <!-- Inicia pantalla quiz -->
+    <main id="contenedorPreguntas" class="contenedor-quiz">
+      <section class="contenedor-quiz__preguntas">
+        <div id="contadorPregunta" class="contenedor-quiz__contador">
           <span>Pregunta <span id="numeroPregunta">1</span> de 10</span>
         </div>
-
-        <div id="contenedorPregunta" class="estilo-pregunta">
+        <!-- Inicia apartado pregunta -->
+        <div id="contenedorPregunta" class="contenedor-quiz__pregunta">
           <h1 id="pregunta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
             quis voluptas. Doloremque sint consequuntur quas tempore eos iure quibusdam blanditiis fugiat modi asperiores. 
             Explicabo, facilis sit?
           </h1>
         </div>
-
-        <div class="barra-progreso">
-          <div class="relleno" style="width: 40%;"></div>
+        <div class="contenedor-quiz__barra">
+          <div class="contenedor-quiz__barra-relleno" style="width: 40%;"></div>
         </div>
-
+        <!-- Termina apartado pregunta -->
       </section>
-      <!--Termina Lado Izquiero: Preguntas-->
+     
+      <!-- Inicia apartado opciones de respuesta-->
+      <section class="quiz-opciones">
+        <div id="contenedorOpciones" class="quiz-opciones__contenedor">
 
-      <!-- Inicia Lado Derecho: Opciones-->
-      <section class="opciones-contenido">
-        <div id="contenedorOpciones" class="estilos-opciones">
-
-          <div class="contenedor-respuesta">
-            <div><h4 class="literales">A</h4></div>
+          <div class="quiz-opciones__respuesta">
+            <div><h4 class="quiz-opciones__literal">A</h4></div>
             <input type="radio" id="opcion-uno" name="opcion" class="radio" value="opcionA"/>
             <label for="opcion-uno" class="opcion" id="opcionUnoLabel">Respuesta 1</label>
           </div>
 
-          <div class="contenedor-respuesta">
-            <div><h4 class="literales">B</h4></div>
+          <div class="quiz-opciones__respuesta">
+            <div><h4 class="quiz-opciones__literal">B</h4></div>
             <input type="radio" id="opcion-dos" name="opcion" class="radio" value="opcionB"/>
             <label for="opcion-dos" class="opcion" id="opcionDosLabel">Respuesta 2</label>
           </div>
 
-          <div class="contenedor-respuesta">
-            <div><h4 class="literales">C</h4></div>
+          <div class="quiz-opciones__respuesta"">
+            <div><h4 class="quiz-opciones__literal">C</h4></div>
             <input type="radio" id="opcion-tres" name="opcion" class="radio" value="opcionC"/>
             <label for="opcion-tres" class="opcion" id="opcionTresLabel">Respuesta 3</label>
           </div>
           
-          <div class="contenedor-respuesta">
-            <div><h4 class="literales">D</h4></div>
+          <div class="quiz-opciones__respuesta">
+            <div><h4 class="quiz-opciones__literal">D</h4></div>
             <input type="radio" id="opcion-cuatro" name="opcion" class="radio" value="opcionD"/>
             <label for="opcion-cuatro" class="opcion" id="opcionCuatroLabel">Respuesta 4</label>
           </div>
-          <div class="boton-continuar">
+          <div class="quiz-opciones__boton">
             <button onclick="siguientePregunta()">Continuar</button> 
           </div>
         </div>
       </section>
-       <!-- Termina Lado Derecho: Opciones-->
+      <!-- Termina apartado opciones de respuesta-->
     </main>
+    <!-- Termina pantalla quiz -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
