@@ -39,7 +39,7 @@
 
     <!-- Iniciar pantalla inicial -->
     <section id="pantallaPrincipal" class="pantalla">
-      <div class="pantalla__bienvenida"">
+      <div class="pantalla__bienvenida">
         <h1>Bienvenido al <br><span>Quiz de Frontend</span></h1>
         <p>Elige un tema para comenzar</p>
       </div>
@@ -52,7 +52,7 @@
       </div>
     </section>
     <!-- Termina pantalla inicial -->
-
+  
     <!-- Inicia pantalla quiz -->
     <main id="contenedorPreguntas" class="contenedor-quiz">
       <section class="contenedor-quiz__preguntas">
@@ -76,32 +76,32 @@
       <section class="quiz-opciones">
         <div id="contenedorOpciones" class="quiz-opciones__contenedor">
 
-          <div class="quiz-opciones__respuesta">
-            <div><h4 class="quiz-opciones__literal">A</h4></div>
-            <input type="radio" id="opcion-uno" name="opcion" class="radio" value="opcionA"/>
-            <label for="opcion-uno" class="opcion" id="opcionUnoLabel">Respuesta 1</label>
-          </div>
+        <h2 id="numeroPregunta"></h2>
 
-          <div class="quiz-opciones__respuesta">
-            <div><h4 class="quiz-opciones__literal">B</h4></div>
-            <input type="radio" id="opcion-dos" name="opcion" class="radio" value="opcionB"/>
-            <label for="opcion-dos" class="opcion" id="opcionDosLabel">Respuesta 2</label>
-          </div>
+        <div class="quiz-opciones__respuesta">
+          <input type="radio" id="opcion-uno" name="opcion" value="opcionA" />
+          <label for="opcion-uno" id="opcionUnoLabel">Respuesta 1</label>
+        </div>
 
-          <div class="quiz-opciones__respuesta"">
-            <div><h4 class="quiz-opciones__literal">C</h4></div>
-            <input type="radio" id="opcion-tres" name="opcion" class="radio" value="opcionC"/>
-            <label for="opcion-tres" class="opcion" id="opcionTresLabel">Respuesta 3</label>
-          </div>
-          
-          <div class="quiz-opciones__respuesta">
-            <div><h4 class="quiz-opciones__literal">D</h4></div>
-            <input type="radio" id="opcion-cuatro" name="opcion" class="radio" value="opcionD"/>
-            <label for="opcion-cuatro" class="opcion" id="opcionCuatroLabel">Respuesta 4</label>
-          </div>
-          <div class="quiz-opciones__boton">
-            <button onclick="siguientePregunta()">Continuar</button> 
-          </div>
+        <div class="quiz-opciones__respuesta">
+          <input type="radio" id="opcion-dos" name="opcion" value="opcionB" />
+          <label for="opcion-dos" id="opcionDosLabel">Respuesta 2</label>
+        </div>
+
+        <div class="quiz-opciones__respuesta">
+          <input type="radio" id="opcion-tres" name="opcion" value="opcionC" />
+          <label for="opcion-tres" id="opcionTresLabel">Respuesta 3</label>
+        </div>
+
+        <div class="quiz-opciones__respuesta">
+          <input type="radio" id="opcion-cuatro" name="opcion" value="opcionD" />
+          <label for="opcion-cuatro" id="opcionCuatroLabel">Respuesta 4</label>
+        </div>
+
+        <div class="quiz-opciones__boton">
+          <button id="botonContinuar">Continuar</button>
+        </div>
+
         </div>
       </section>
       <!-- Termina apartado opciones de respuesta-->
