@@ -298,6 +298,12 @@ input[type=radio]:checked ~ .option {
 }
 /* Estilo respuestas finaliza*/
 
+/*EStilo de barra de preguntas*/
+.contenedor-quiz__barra-relleno{
+  width: 0%;
+  
+}
+
 /*Tarjeta de juego Finalizado*/
  
   

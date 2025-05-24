@@ -1,4 +1,6 @@
 import preguntas from './preguntas.json';
+import Swal from "sweetalert2"
+
 
 let preguntaSeleccionada = [];
 let indicePregunta = 0;
@@ -59,6 +61,9 @@ function preguntas_categoria(tema) {
   indicePregunta = 0;
   numPregunta = 1;
   mostrarPregunta();
+
+  //aumentando barra de estado
+  
 }
 
 function mostrarPregunta() {
@@ -67,7 +72,19 @@ function mostrarPregunta() {
     handleEndGame();
     return;
   }
+  //borrando bordes
+  const opciones = document.querySelectorAll('.quiz-opciones__respuesta');
+    opciones.forEach(opcion => {
+        opcion.style.border = "";
+    });
 
+  //aumentando el progreso de la barra
+  let barra = document.querySelector('.contenedor-quiz__barra-relleno');
+    let progreso = ((indicePregunta + 1) / preguntaSeleccionada.length) * 100;
+    barra.style.width = progreso + "%";
+  
+
+  console.log(indicePregunta)
   document.getElementById('numeroPregunta').textContent = ` ${numPregunta} de ${preguntaSeleccionada.length}`;
   document.getElementById('pregunta').textContent = pregunta.pregunta;
   document.getElementById('opcionUnoLabel').textContent = pregunta.opcionA;
@@ -89,21 +106,26 @@ function revisarPregunta() {
 
   const seleccionada = Array.from(opciones).find(op => op.checked);
   if (!seleccionada) {
-    alert("Selecciona una opción antes de continuar.");
+    Swal.fire({
+      icon: "warning",
+      title: "Espera!",
+      text: "¡No has seleccionado una respuesta aun!",      
+    })
     return false; // No avanzar aún
   }
 
-  const esCorrecta = seleccionada.value === respuestaCorrecta;
-  const idLabelSeleccionada = seleccionada.labels[0].id;
-  const idLabelCorrecta = Array.from(opciones).find(op => op.value === respuestaCorrecta).labels[0].id;
+//subrayando respuestas correctas
+const esCorrecta = seleccionada.value === respuestaCorrecta;
+const contenedorSeleccionado = seleccionada.closest(".quiz-opciones__respuesta");
+const contenedorCorrecto = Array.from(opciones).find(op => op.value === respuestaCorrecta).closest(".quiz-opciones__respuesta");
 
-  if (esCorrecta) {
-    document.getElementById(idLabelCorrecta).style.backgroundColor = "green";
-  } else {
-    document.getElementById(idLabelSeleccionada).style.backgroundColor = "red";
-    document.getElementById(idLabelCorrecta).style.backgroundColor = "green";
+if (esCorrecta) {
+    contenedorCorrecto.style.border = "3px solid green";
+} else {
+    contenedorSeleccionado.style.border = "3px solid red";
+    contenedorCorrecto.style.border = "3px solid green";
     incorrectas++;
-  }
+}
 
   return true;
 }
