@@ -18,7 +18,7 @@
         <div class="header__icono-boton">
           <img class="header__icono" src="/src/images/icon-accessibility.svg" alt="Icono del tema">
         </div>
-        <h2 class="header__titulo">Algún tema</h2>
+        <h2 class="header__titulo" id="textoTema">Algún tema</h2>
       </div>
 
       <div class="header__modo-oscuro">
@@ -45,10 +45,22 @@
       </div>
 
       <div class="selector-tema">
-        <button class="selector-tema__btn" onclick="empezarQuiz('html')">HTML</button>
-        <button class="selector-tema__btn" onclick="empezarQuiz('css')">CSS</button>
-        <button class="selector-tema__btn" onclick="empezarQuiz('git')">GIT</button>
-        <button class="selector-tema__btn" onclick="empezarQuiz('javascript')">JAVASCRIPT</button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('html')">
+          <img src="/src/images/icon-html.svg" alt="HTML" class="selector-tema__icono">
+          HTML
+        </button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('css')">
+          <img src="/src/images/icon-css.svg" alt="CSS" class="selector-tema__icono">
+          CSS
+        </button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('git')">
+          <img src="/src/images/icon-git.svg" alt="git" class="selector-tema__icono">
+          GIT
+        </button>
+        <button class="selector-tema__btn" onclick="empezarQuiz('javascript')">
+          <img src="/src/images/icon-js.svg" alt="JS" class="selector-tema__icono">
+          JAVASCRIPT
+        </button>
       </div>
     </section>
     <!-- Termina pantalla inicial -->
@@ -56,16 +68,19 @@
     <!-- Inicia pantalla quiz -->
     <main id="contenedorPreguntas" class="contenedor-quiz">
       <section class="contenedor-quiz__preguntas">
-        <div id="contadorPregunta" class="contenedor-quiz__contador">
-          <span>Pregunta <span id="numeroPregunta">1</span> de 10</span>
+        <div class="contenedor-quiz__seccion">
+          <div id="contadorPregunta" class="contenedor-quiz__contador">
+            <span>Pregunta <span id="numeroPregunta"></span></span>
+          </div>
+          <!-- Inicia apartado pregunta -->
+          <div id="contenedorPregunta" class="contenedor-quiz__pregunta">
+            <h2 id="pregunta" class="contenedor-quiz__titulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
+              quis voluptas. Doloremque sint consequuntur quas tempore eos iure quibusdam blanditiis fugiat modi asperiores. 
+              Explicabo, facilis sit?
+            </h2>
+          </div>
         </div>
-        <!-- Inicia apartado pregunta -->
-        <div id="contenedorPregunta" class="contenedor-quiz__pregunta">
-          <h1 id="pregunta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus nobis cumque nihil 
-            quis voluptas. Doloremque sint consequuntur quas tempore eos iure quibusdam blanditiis fugiat modi asperiores. 
-            Explicabo, facilis sit?
-          </h1>
-        </div>
+
         <div class="contenedor-quiz__barra">
           <div class="contenedor-quiz__barra-relleno" style="width: 40%;"></div>
         </div>
@@ -76,24 +91,26 @@
       <section class="quiz-opciones">
         <div id="contenedorOpciones" class="quiz-opciones__contenedor">
 
-        <h2 id="numeroPregunta"></h2>
-
         <div class="quiz-opciones__respuesta">
+          <div><h4 class="quiz-opciones__literal">A</h4></div>
           <input type="radio" id="opcion-uno" name="opcion" value="opcionA" />
           <label for="opcion-uno" id="opcionUnoLabel">Respuesta 1</label>
         </div>
 
         <div class="quiz-opciones__respuesta">
+          <div><h4 class="quiz-opciones__literal">B</h4></div>
           <input type="radio" id="opcion-dos" name="opcion" value="opcionB" />
           <label for="opcion-dos" id="opcionDosLabel">Respuesta 2</label>
         </div>
 
         <div class="quiz-opciones__respuesta">
+          <div><h4 class="quiz-opciones__literal">C</h4></div>
           <input type="radio" id="opcion-tres" name="opcion" value="opcionC" />
           <label for="opcion-tres" id="opcionTresLabel">Respuesta 3</label>
         </div>
 
         <div class="quiz-opciones__respuesta">
+          <div><h4 class="quiz-opciones__literal">D</h4></div>
           <input type="radio" id="opcion-cuatro" name="opcion" value="opcionD" />
           <label for="opcion-cuatro" id="opcionCuatroLabel">Respuesta 4</label>
         </div>
@@ -107,6 +124,15 @@
       <!-- Termina apartado opciones de respuesta-->
     </main>
     <!-- Termina pantalla quiz -->
+
+      <!-- Pantalla de resultados -->
+      <section id="pantallaResultados" class="resultados align-items-center" style="display: none;">
+
+      </section>
+      <!-- Termina Pantalla de resultados -->
+
+      
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
